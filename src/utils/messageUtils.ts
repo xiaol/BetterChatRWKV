@@ -21,18 +21,18 @@ export const getChatGPTEncoding = (
   messages: MessageInterface[],
   model: ModelOptions
 ) => {
-  const isGpt3 = model === 'gpt-3.5-turbo';
+  const isGpt3 = false;
 
   const msgSep = isGpt3 ? '\n' : '';
-  const roleSep = isGpt3 ? '\n' : '<|im_sep|>';
+  const roleSep = isGpt3 ? ': ' : '<|im_sep|>';
 
   const serialized = [
     messages
       .map(({ role, content }) => {
-        return `<|im_start|>${role}${roleSep}${content}<|im_end|>`;
+        return `${role}${roleSep}${content}`;
       })
       .join(msgSep),
-    `<|im_start|>assistant${roleSep}`,
+    `Assistant${roleSep}`,
   ].join(msgSep);
 
   return encoder.encode(serialized, 'all');
