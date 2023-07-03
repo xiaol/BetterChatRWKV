@@ -95,10 +95,10 @@ export const defaultUserMaxToken = 4000;
 export const _defaultChatConfig: ConfigInterface = {
   model: defaultModel,
   max_tokens: defaultUserMaxToken,
-  temperature: 1,
-  presence_penalty: 0,
-  top_p: 1,
-  frequency_penalty: 0,
+  temperature: 1.4,
+  presence_penalty: 0.4,
+  top_p: 0.3,
+  frequency_penalty: 0.4,
 };
 
 export const generateDefaultChat = (
