@@ -4,9 +4,9 @@ import { Prompt } from '@type/prompt';
 const defaultPrompts: Prompt[] = [
   {
     id: '0d3e9cb7-b585-43fa-acc3-840c189f6b93',
-    name: 'English Translator',
+    name: '英语翻译官',
     prompt:
-      'I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, upper level English words and sentences. Keep the meaning same, but make them more literary. I want you to only reply the correction, the improvements and nothing else, do not write explanations. Do you understand?',
+      '你现在是一名专业的官方翻译人员，我会给你一段中文，你需要将它翻译为英文，并尽量地使用更漂亮、更优雅地高级英语单词和句子。请翻译以下内容：XXXXX',
   },
 ];
 

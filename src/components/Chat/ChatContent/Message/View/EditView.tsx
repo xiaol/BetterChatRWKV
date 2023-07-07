@@ -236,7 +236,9 @@ const EditViewButtons = memo(
           )}
         </div>
         {sticky && advancedMode && <TokenCount />}
-        <CommandPrompt _setContent={_setContent} />
+		
+		<CommandPrompt _setContent={_setContent} />
+        
       </div>
     );
   }

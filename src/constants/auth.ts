@@ -1,7 +1,11 @@
-export const officialAPIEndpoint = 'https://rwkv.ai-creator.net/chntuned/v1/chat/completions';
-const customAPIEndpoint =
-  import.meta.env.VITE_CUSTOM_API_ENDPOINT || 'https://chatgpt-api.shn.hk/v1/';
-export const defaultAPIEndpoint =
-  import.meta.env.VITE_DEFAULT_API_ENDPOINT || officialAPIEndpoint;
+export const StarRingAPIEndpoint = 'https://staring-api.xiaomiqiu.com/api/chat_base' ;
 
-export const availableEndpoints = [officialAPIEndpoint, customAPIEndpoint];
+export const RWKVAPIEndpoint = 'https://rwkv.ai-creator.net/chat/completions' ;
+
+export const RWKVCHNAPIEndpoint = 'https://rwkv.ai-creator.net/chntuned/v1/chat/completions' ;
+
+
+//可用得端点
+
+export const availableEndpoints = [RWKVCHNAPIEndpoint,RWKVAPIEndpoint];
+//export const availableEndpoints = [RWKVCHNAPIEndpoint]

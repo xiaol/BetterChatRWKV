@@ -30,7 +30,7 @@ const ChatTitle = React.memo(() => {
     setChats(updatedChats);
   };
 
-  // for migrating from old ChatInterface to new ChatInterface (with config)
+  // for migrating from old ChatInterface to 新的对话Interface (with config)
   useEffect(() => {
     const chats = useStore.getState().chats;
     if (chats && chats.length > 0 && currentChatIndex !== -1 && !config) {

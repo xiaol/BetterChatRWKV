@@ -78,7 +78,7 @@ function App() {
     <div className='overflow-hidden w-full h-full relative'>
       <Menu />
       <Chat />
-      <ApiPopup />
+      {/* <ApiPopup /> */} //去掉API KEY限制
       <Toast />
     </div>
   );

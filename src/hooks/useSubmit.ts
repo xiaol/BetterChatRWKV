@@ -6,7 +6,7 @@ import { getChatCompletion, getChatCompletionStream } from '@api/api';
 import { parseEventSource } from '@api/helper';
 import { limitMessageTokens, updateTotalTokenUsed } from '@utils/messageUtils';
 import { _defaultChatConfig } from '@constants/chat';
-import { officialAPIEndpoint } from '@constants/auth';
+import { RWKVAPIEndpoint } from '@constants/auth';
 
 const useSubmit = () => {
   const { t, i18n } = useTranslation('api');
@@ -26,7 +26,7 @@ const useSubmit = () => {
     try {
       if (!apiKey || apiKey.length === 0) {
         // official endpoint
-        if (apiEndpoint === officialAPIEndpoint) {
+        if (apiEndpoint === 'https://staring-api.xiaomiqiu.com/api/chat_base') {
           throw new Error(t('noApiKeyWarning') as string);
         }
 
@@ -80,7 +80,7 @@ const useSubmit = () => {
       // no api key (free)
       if (!apiKey || apiKey.length === 0) {
         // official endpoint
-        if (apiEndpoint === officialAPIEndpoint) {
+        if (apiEndpoint === 'https://staring-api.xiaomiqiu.com/api/chat_base') {
           throw new Error(t('noApiKeyWarning') as string);
         }
 
@@ -159,7 +159,7 @@ const useSubmit = () => {
         );
       }
 
-      // generate title for new chats
+      // generate title for 新的对话s
       if (
         useStore.getState().autoTitle &&
         currChats &&

@@ -9,8 +9,8 @@
   "clearConversation": "清除会话",
   "import": "导入",
   "export": "导出",
-  "author": "由 Jing Hua 制作",
-  "about": "关于和赞助",
+  "author": "由 RWKV + Jing Hua 制作",
+  "about": "关于和说明",
   "api": "API",
   "personal": "个人",
   "free": "免费",
@@ -19,8 +19,8 @@
   "assistant": "助手",
   "system": "系统",
   "newChat": "新聊天",
-  "lightMode": "亮色模式",
-  "darkMode": "黑暗模式",
+  "lightMode": "亮白模式",
+  "darkMode": "酷黑模式",
   "setting": "设置",
   "image": "图片",
   "autoTitle": "自动生成标题",
@@ -43,5 +43,5 @@
   "cloneChat": "创建聊天副本",
   "cloned": "已创建副本",
   "enterToSubmit": "按回车键提交",
-  "submitPlaceholder": "输入消息或点击 [/] 以使用提示词…"
+  "submitPlaceholder": "输入消息或点击 [提示工程] 以使用提示词…"
 }

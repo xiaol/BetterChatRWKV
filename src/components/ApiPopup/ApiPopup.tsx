@@ -32,10 +32,11 @@ const ApiPopup = () => {
   useEffect(() => {
     setFirstVisit(false);
   }, []);
+  
 
   return isModalOpen ? (
     <PopupModal
-      title='Setup your API key'
+      title='设置API Key'
       handleConfirm={handleConfirm}
       setIsModalOpen={setIsModalOpen}
       cancelButton={false}
@@ -61,7 +62,7 @@ const ApiPopup = () => {
             ns='api'
             components={[
               <a
-                href='https://platform.openai.com/account/api-keys'
+                href=''
                 className='link'
                 target='_blank'
               />,
