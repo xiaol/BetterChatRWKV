@@ -49,7 +49,7 @@ export interface Folder {
   color?: string;
 }
 
-export type ModelOptions = 'RWKV-World-7B' | 'RWKVCHN' | 'gpt-3.5-turbo' | 'gpt-4' | 'StaringGPT' ;
+export type ModelOptions = 'RWKVJPN' |'RWKV-World-7B' | 'RWKVCHN' | 'gpt-3.5-turbo' | 'gpt-4' | 'StaringGPT' ;
 
 
 export type TotalTokenUsed = {
