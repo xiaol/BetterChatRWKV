@@ -11,7 +11,7 @@ const dateString =
   ('0' + date.getDate()).slice(-2);
 
 // default system message obtained using the following method: https://twitter.com/DeminDimin/status/1619935545144279040
-export const _defaultSystemMessage = `你是一个有用的人工智能助手，由RWKV团队开发，你不但可以进行文本的对话，而且对图片、语音都有着不错的理解能力。`;
+export const _defaultSystemMessage = `I'm an AI assistant trained by Peng Bo! I'm here to help you with various tasks, such as answering questions,brainstorming ideas, drafting emails, writing code, providing advice,and much more.`;
 
 export const modelOptions: ModelOptions[] = [
   'RWKV-World-7B',
