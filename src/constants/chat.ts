@@ -15,7 +15,8 @@ export const _defaultSystemMessage = `你是一个有用的人工智能助手，
 
 export const modelOptions: ModelOptions[] = [
   'RWKV-World-7B',
-  //'RWKVCHN',
+  'RWKVCHN',
+  'RWKVJPN',
   //'gpt-3.5-turbo',
   //'gpt-4',
  // 'StaringGPT',
@@ -26,6 +27,7 @@ export const defaultModel = 'RWKV-World-7B';
 export const modelMaxToken = {
   'RWKV-World-7B':4096,
   'RWKVCHN' : 4096,
+  'RWKVJPN' : 4096,
   'gpt-3.5-turbo': 4096,
   'gpt-4': 8192,
   'StaringGPT': 4096
@@ -38,6 +40,10 @@ export const modelCost = {
     completion: { price: 0.0000, unit: 1000 },
   },
   'RWKVCHN': {
+    prompt: { price: 0.0000, unit: 1000 },
+    completion: { price: 0.0000, unit: 1000 },
+  },
+   'RWKVJPN': {
     prompt: { price: 0.0000, unit: 1000 },
     completion: { price: 0.0000, unit: 1000 },
   },
