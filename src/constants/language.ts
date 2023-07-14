@@ -1,4 +1,4 @@
-languages that have translation files in `public/locales`
+// languages that have translation files in `public/locales`
 export const i18nLanguages = [
   // 'ar',
   'da',
