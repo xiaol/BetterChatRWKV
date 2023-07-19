@@ -22,7 +22,7 @@ export const modelOptions: ModelOptions[] = [
  // 'StaringGPT',
 ];
 
-export const defaultModel = 'RWKV-World-7B';
+export const defaultModel = 'RWKVJPN';
 
 export const modelMaxToken = {
   'RWKV-World-7B':4096,
